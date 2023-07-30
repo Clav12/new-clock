@@ -21,7 +21,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    lintOptions {
+        baseline file("lint-baseline.xml")
+        checkAllWarnings true
+        warningsAsErrors true
+        abortOnError true
     }
+
+    }
+
 
     
 
